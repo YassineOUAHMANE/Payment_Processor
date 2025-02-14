@@ -39,12 +39,7 @@ In this project, we apply the **Strategy Pattern** to a **payment processor**, a
 ### 1️⃣ Prerequisites
 Ensure you have **Python 3.x** installed.
 
-### 2️⃣ Install Dependencies
-```sh
-pip install -r requirements.txt
-```
-
-### 3️⃣ Example Usage (`main.py`)
+### 2️⃣ Example Usage (`main.py`)
 ```python
 from payment_processor.payement_processor import paymentprocessor
 from payment_processor.ConcreteStrategy import creditcard,bitcoin,PayPalPayment
@@ -71,7 +66,5 @@ client.processpayment(1000)
 
 ---
 
-## 📜 License
-This project is open-source and available under the **MIT License**.
 
 <p align="center"><b>Happy Coding! 🎄✨</b></p>
