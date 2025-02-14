@@ -45,15 +45,15 @@ from payment_processor.payement_processor import paymentprocessor
 from payment_processor.ConcreteStrategy import creditcard,bitcoin,PayPalPayment
 
 
-creditcardmethod = creditcard("156746317863214856") 
-bitcoinmethod = bitcoin("231653412318954162165465456456465")
-PayPalPaymentmethod = PayPalPayment("ahmed123@gmail.com")
+creditcard_method = creditcard("156746317863214856") 
+bitcoin_method = bitcoin("231653412318954162165465456456465")
+PayPal_method = PayPalPayment("ahmed123@gmail.com")
 
-client = paymentprocessor(creditcardmethod)
+client = paymentprocessor(creditcard_method)
 client.processpayment(100)
-client.set_strategy(bitcoinmethod)
+client.set_strategy(bitcoin_method)
 client.processpayment(500)
-client.set_strategy(PayPalPaymentmethod)
+client.set_strategy(PayPal_method)
 client.processpayment(1000)
 ```
 
